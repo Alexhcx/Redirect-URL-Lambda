@@ -16,7 +16,7 @@ O Lambda recebe um código de URL curta como entrada e busca a URL original corr
 
 ## Instruções de Uso
 
-**Pré-requisitos:** Uma conta AWS, AWS CLI configurada, Java JDK instalado.
+**Pré-requisitos:** Uma conta AWS, Java JDK instalado.
 
 **Deploy:** 
 
