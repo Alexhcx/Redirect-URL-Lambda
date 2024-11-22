@@ -9,7 +9,7 @@ Este projeto é uma função Lambda escrita em Java que redireciona URLs curtas.
 
 ## Descrição
 
-A função Lambda recebe uma URL curta como entrada. O código extrai o código da URL curta do parâmetro `rawPath` da requisição. Em seguida, busca no bucket do S3 `projeto-lambda-shortener-url-ale` um arquivo JSON com o nome `shortUrlCode.json`. Esse arquivo contém a URL original e a data de expiração. Se a URL for válida, o usuário é redirecionado para a URL original. Caso contrário, uma mensagem de erro "This Url has expired" é exibida.
+A função Lambda recebe uma URL curta como entrada. O código extrai o código da URL curta do parâmetro `rawPath` da requisição. Em seguida, busca no bucket do S3 `projeto-lambda-shortener-url-ale` (utilize um nome único para seu bucket) um arquivo JSON com o nome `shortUrlCode.json`. Esse arquivo contém a URL original e a data de expiração. Se a URL for válida, o usuário é redirecionado para a URL original. Caso contrário, uma mensagem de erro "This Url has expired" é exibida.
 
 ## Explicação do Código
 
@@ -32,7 +32,7 @@ A função Lambda recebe uma URL curta como entrada. O código extrai o código 
 * **Maven:** Ferramenta de gerenciamento de dependências e build do projeto.
 
 ## Exemplo de Uso
-https://{seu_endpoint_api_gateway}/{url_curta}
+`https://{seu_endpoint_api_gateway}/{url_curta}`
 
 **Observações:**
 
@@ -40,7 +40,6 @@ https://{seu_endpoint_api_gateway}/{url_curta}
 
 ## Informações Adicionais
 
-* Este projeto foi desenvolvido como parte do Curso Gratuito de Java da Rocketseat. O certificado de participação está disponível [aqui](source 1). 
 * O curso abrangeu tópicos como desenvolvimento de aplicações serverless com Java e Maven, integração com AWS S3, API Gateway e Lambda, e manipulação de dados em JSON.
 * O código fonte do projeto está disponível no GitHub em:
     * **Redirect URL:** [https://github.com/Alexhcx/Redirect-URL-Lambda](https://github.com/Alexhcx/Redirect-URL-Lambda)
